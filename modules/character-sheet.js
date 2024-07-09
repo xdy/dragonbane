@@ -89,7 +89,8 @@ export default class DoDCharacterSheet extends ActorSheet {
             editable: this.isEditable,
             actor: baseData.actor,
             system: baseData.data.system,
-            config: CONFIG.DoD
+            config: CONFIG.DoD,
+            automaticSkillIntensiveTraining: game.settings.get("dragonbane", "automaticSkillIntensiveTraining") ?? false
         };
 
         async function enrich(html) {
@@ -1204,12 +1205,11 @@ export default class DoDCharacterSheet extends ActorSheet {
             if (advance) {
                 if (game.dice3d) {
                     game.dice3d.waitFor3DAnimationByMessageID(msg.id).then(
-                        () => skillItem.update({ "system.value": skillItem.system.value + 1 }));
+                        () => skillItem.update({ "system.value": skillItem.system.value + 1, "system.taught": true }));
                 } else {
-                    await skillItem.update({ "system.value": skillItem.system.value + 1 });
+                    await skillItem.update({ "system.value": skillItem.system.value + 1, "system.taught": true });
                 }
             }
-            await skillItem.update({ "system.taught": true })
         } else {
             await skillItem.update({ "system.taught": false })
         }

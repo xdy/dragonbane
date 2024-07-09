@@ -545,7 +545,9 @@
             "allowDealDamageOnSelected": "Skada på vald spelfigur",
             "allowDealDamageOnSelectedHint": "Spelledaren (GM) kan tillfoga skada (och hela skada) på vald spelfigur om ingen spelfigur satts som mål.",
             "automaticSkillAdvancementMark": "Automatiskt förbättringskryss",
-            "automaticSkillAdvancementMarkHint": "Sätt automatiskt förbättringskryss vid Drakslag eller Demonslag."
+            "automaticSkillAdvancementMarkHint": "Sätt automatiskt förbättringskryss vid Drakslag eller Demonslag.",
+            "automaticSkillIntensiveTraining": "Hantera intensiv träning med en lärare.",
+            "automaticSkillIntensiveTrainingHint": "Hantera intensiv träning med en lärare (lägger till en knapp för intensiv träning, om det lyckas blockeras knappen tills förbättringskryss är ifyllt.)"
         },
         "WARNING": {
             "kinAbility": "Kan ej hitta Släktesförmåga: {ability}",

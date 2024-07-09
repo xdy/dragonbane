@@ -541,7 +541,9 @@
             "allowDealDamageOnSelected": "Damage selected token",
             "allowDealDamageOnSelectedHint": "If checked, the GM may deal damage (and heal) the selected token if no token has been targeted.",
             "automaticSkillAdvancementMark": "Automate skill checkmark",
-            "automaticSkillAdvancementMarkHint": "Automatically set improvement checkmark on Dragon and Demon rolls."
+            "automaticSkillAdvancementMarkHint": "Automatically set improvement checkmark on Dragon and Demon rolls.",
+            "automaticSkillIntensiveTraining": "Handle intensive training with a teacher.",
+            "automaticSkillIntensiveTrainingHint": "Handle intensive training with a teacher (will add a second checkbox to be clicked after intensive training, if that advancement is successful it will be blocked until an advancement check has been filled.)"
         },
         "WARNING": {
             "kinAbility": "Could not find Kin Ability: {ability}",
